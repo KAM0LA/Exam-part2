@@ -1,0 +1,293 @@
+const products = [
+    {
+      id: 1,
+      name: "blinchiki",
+      category: "bread",
+      description: "Г/Ц Блинчики с мясом вес, Россия ",
+      price: 50.50,
+      priceDiscount: 44.50,
+      rating: 2,
+      discount: 50,
+      image: "assets/images/home/blinchik.png",
+    },
+    {
+      id: 2,
+      name: "milk",
+      category: "milkCheeseEgg",
+      description: "Молоко паст. питьевое отборное...",
+      price: 50.50,
+      priceDiscount: 44.50,
+      rating: 3,
+      discount: 50,
+      image: "assets/images/home/milk.png"
+    },
+    {
+      id: 3,
+      name: "kolbasaWithCheese",
+      category: "milkCheeseEgg",
+      description: "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
+      price: 50.50,
+      priceDiscount: 44.50,
+      rating: 4,
+      discount: 50,
+      image: "assets/images/home/kolbasawithcheese.png"
+    },
+    {
+      id: 4,
+      name: "kolbasaWithMeat",
+      category: "milk-cheese-egg",
+      description: "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
+      price: 50.50,
+      priceDiscount: 44.50,
+      rating: 4,
+      discount: 50,
+      image: "assets/images/home/kolbasawithmeat.png"
+    },
+    {
+      id: 5,
+      name: "kombaynKolbasa",
+      category: "meat-chicken-sausage",
+      description: "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      price: 77.99,
+      priceDiscount: 0,
+      rating: 5,
+      discount: 0,
+      image: "assets/images/home/kombaynKolbasa.png"
+    },
+    {
+      id: 6,
+      name: "kolbasaWithCheese",
+      category: "milkCheeseEgg",
+      description: "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      price: 159.99,
+      priceDiscount: 0,
+      rating: 4,
+      discount: 0,
+      image: "assets/images/home/kolbasawithcheese.png"
+    },
+    {
+      id: 7,
+      name: "kolbasa",
+      category: "meat-chicken-sausage",
+      description: "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      price: 599.99,
+      priceDiscount: 0,
+      rating: 4,
+      discount: 0,
+      image: "assets/images/home/kolbasa.png"
+    },
+    {
+      id: 8,
+      name: "milk",
+      category: "milkCheeseEgg",
+      description: "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      price: 49.39,
+      priceDiscount: 0,
+      rating: 4,
+      discount: 0,
+      image: "assets/images/home/milk.png"
+    },
+    {
+      id: 9,
+      name: "yogurt",
+      category: "milkCheeseEgg",
+      description: "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      price: 29.99,
+      priceDiscount: 0,
+      rating: 2,
+      discount: 0,
+      image: "assets/images/products/yogurt.png"
+    },
+    {
+      id: 10,
+      name: "yogurt",
+      category: "milkCheeseEgg",
+      description: "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      price: 32.99,
+      priceDiscount: 0,
+      rating: 3,
+      discount: 0,
+      image: "assets/images/products/yogurt2.png"
+    },
+    {
+      id: 11,
+      name: "cream-cheese",
+      category: "milkCheeseEgg",
+      description: "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      price: 129.99,
+      priceDiscount: 0,
+      rating: 3,
+      discount: 0,
+      image: "assets/images/products/cream-cheese.png"
+    },
+    {
+      id: 12,
+      name: "maslo",
+      category: "milkCheeseEgg",
+      description: "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      price: 192.54,
+      priceDiscount: 0,
+      rating: 5,
+      discount: 0,
+      image: "assets/images/products/maslo.png"
+    },
+    {
+      id: 13,
+      name: "moloko",
+      category: "milkCheeseEgg",
+      description: "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      price: 77.12,
+      priceDiscount: 0,
+      rating: 3,
+      discount: 0,
+      image: "assets/images/products/moloko.png"
+    },
+    {
+      id: 14,
+      name: "blinchiki",
+      category: "bread",
+      description: "Г/Ц Блинчики с мясом вес, Россия ",
+      price: 50.50,
+      priceDiscount: 44.50,
+      rating: 2,
+      discount: 50,
+      image: "assets/images/home/blinchik.png",
+    },
+    {
+      id: 15,
+      name: "milk",
+      category: "milkCheeseEgg",
+      description: "Молоко паст. питьевое отборное...",
+      price: 50.50,
+      priceDiscount: 44.50,
+      rating: 3,
+      discount: 50,
+      image: "assets/images/home/milk.png"
+    },
+    {
+      id: 16,
+      name: "kolbasaWithCheese",
+      category: "milkCheeseEgg",
+      description: "Колбаса сырокопченая МЯСНАЯ ИСТОРИЯ Сальчичон и Тоскан...",
+      price: 50.50,
+      priceDiscount: 44.50,
+      rating: 4,
+      discount: 50,
+      image: "assets/images/home/kolbasawithcheese.png"
+    },
+    {
+      id: 17,
+      name: "kolbasaWithMeat",
+      category: "milk-cheese-egg",
+      description: "Сосиски вареные МЯСНАЯ ИСТОРИЯ Молочные и С сыро...",
+      price: 50.50,
+      priceDiscount: 44.50,
+      rating: 4,
+      discount: 50,
+      image: "assets/images/home/kolbasawithmeat.png"
+    },
+    {
+      id: 18,
+      name: "kombaynKolbasa",
+      category: "meat-chicken-sausage",
+      description: "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      price: 77.99,
+      priceDiscount: 0,
+      rating: 5,
+      discount: 0,
+      image: "assets/images/home/kombaynKolbasa.png"
+    },
+    {
+      id: 19,
+      name: "kolbasaWithCheese",
+      category: "milkCheeseEgg",
+      description: "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      price: 159.99,
+      priceDiscount: 0,
+      rating: 4,
+      discount: 0,
+      image: "assets/images/home/kolbasawithcheese.png"
+    },
+    {
+      id: 20,
+      name: "kolbasa",
+      category: "meat-chicken-sausage",
+      description: "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      price: 599.99,
+      priceDiscount: 0,
+      rating: 4,
+      discount: 0,
+      image: "assets/images/home/kolbasa.png"
+    },
+    {
+      id: 21,
+      name: "milk",
+      category: "milkCheeseEgg",
+      description: "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      price: 49.39,
+      priceDiscount: 0,
+      rating: 4,
+      discount: 0,
+      image: "assets/images/home/milk.png"
+    },
+    {
+      id: 22,
+      name: "yogurt",
+      category: "milkCheeseEgg",
+      description: "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      price: 29.99,
+      priceDiscount: 0,
+      rating: 2,
+      discount: 0,
+      image: "assets/images/products/yogurt.png"
+    },
+    {
+      id: 23,
+      name: "yogurt",
+      category: "milkCheeseEgg",
+      description: "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      price: 32.99,
+      priceDiscount: 0,
+      rating: 3,
+      discount: 0,
+      image: "assets/images/products/yogurt2.png"
+    },
+    {
+      id: 24,
+      name: "cream-cheese",
+      category: "milkCheeseEgg",
+      description: "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      price: 129.99,
+      priceDiscount: 0,
+      rating: 3,
+      discount: 0,
+      image: "assets/images/products/cream-cheese.png"
+    },
+    {
+      id: 25,
+      name: "maslo",
+      category: "milkCheeseEgg",
+      description: "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+      price: 192.54,
+      priceDiscount: 0,
+      rating: 5,
+      discount: 0,
+      image: "assets/images/products/maslo.png"
+    },
+    // {
+    //   id: 12,
+    //   name: "moloko",
+    //   category: "milkCheeseEgg",
+    //   description: "Комбайн КЗС-1218 «ДЕСНА-ПОЛЕСЬЕ GS12»",
+    //   price: 77.12,
+    //   priceDiscount: 0,
+    //   rating: 3,
+    //   discount: 0,
+    //   image: "assets/images/products/moloko.png"
+    // },
+    
+  ];
+
+
+
+
